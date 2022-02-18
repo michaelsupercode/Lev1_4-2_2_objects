@@ -1,12 +1,13 @@
 //Lev1_2//objects
-/*let person = {
-    nName: `Manni`,
-    age: `63`
-    wtf
- */
+let person = {
+    name: 'Michael',
+    alter: 59,
+    sagNameAlter: function test() {
+        alert("..named " + this.name + "  and aged " + this.alter + " y..")
+    }
 
-
-
+}
+console.log("Name: " + person.name + " Alter:" + person.alter);
 
 //Lev1_4//
 let unsereHausTiere = [{
@@ -135,7 +136,9 @@ console.log(myMusic1[3].artist);
 console.log(myMusic1[3].title);
 console.log(myMusic1[3].medium);
 
-//printHTML fehlt
+myMusic1.forEach(a => {
+    document.getElementById("print").innerHTML += `<h6>${a.artist} ${a.title} ${a.medium}</h6>`;
+});
 
 //Lev1_8//
 let studentData = [{
